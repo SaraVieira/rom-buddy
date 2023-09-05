@@ -1,12 +1,9 @@
 import {
   Card,
-  Image,
   Text,
   Group,
-  Badge,
   createStyles,
   Center,
-  Button,
   rem,
   Box,
   SegmentedControl,
@@ -18,7 +15,6 @@ import {
   IconCalendarEvent,
   IconClockBolt,
   IconDotsVertical,
-  IconGripVertical,
   IconStarHalfFilled,
   IconTrash,
 } from "@tabler/icons-react";
@@ -32,7 +28,6 @@ const useStyles = createStyles((theme) => ({
   },
 
   imageSection: {
-    position: "relative",
     padding: theme.spacing.md,
     display: "flex",
     alignItems: "center",
@@ -40,12 +35,6 @@ const useStyles = createStyles((theme) => ({
     borderBottom: `${rem(1)} solid ${
       theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
     }`,
-  },
-
-  drag: {
-    top: theme.spacing.md,
-    left: theme.spacing.md,
-    position: "absolute",
   },
 
   label: {
@@ -73,7 +62,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function BacklogGame({ index, dragHandleProps }: any) {
+export function BacklogGame({ index }: any) {
   const { toggleGameState, backlog, deleteKey } = useBacklog();
   const { classes } = useStyles();
   if (!backlog[index]) return null;
@@ -92,9 +81,6 @@ export function BacklogGame({ index, dragHandleProps }: any) {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        <div {...dragHandleProps} className={classes.drag}>
-          <IconGripVertical size={"1rem"} stroke={1.5} />
-        </div>
         <Box
           h={400}
           w={"100%"}
