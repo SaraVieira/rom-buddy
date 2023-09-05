@@ -10,13 +10,17 @@ import {
   rem,
   Box,
   SegmentedControl,
+  Menu,
+  ActionIcon,
 } from "@mantine/core";
 import {
   IconBrandSteam,
   IconCalendarEvent,
   IconClockBolt,
+  IconDotsVertical,
   IconGripVertical,
   IconStarHalfFilled,
+  IconTrash,
 } from "@tabler/icons-react";
 import { useBacklog } from "../../utils/useBacklog";
 import { secondsToHms } from "../../utils/times";
@@ -69,20 +73,21 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function BacklogGame({
-  image,
-  id,
-  game_name,
-  profile_platform,
-  release_world,
-  review_score,
-  comp_main,
-  profile_steam,
-  dragHandleProps,
-  state,
-}: any) {
-  const { toggleGameState } = useBacklog();
+export function BacklogGame({ index, dragHandleProps }: any) {
+  const { toggleGameState, backlog, deleteKey } = useBacklog();
   const { classes } = useStyles();
+  if (!backlog[index]) return null;
+  const {
+    id,
+    game_name,
+    profile_platform,
+    release_world,
+    review_score,
+    comp_main,
+    profile_steam,
+    image = "",
+    state,
+  } = backlog[index];
 
   return (
     <Card withBorder radius="md" className={classes.card}>
@@ -94,9 +99,9 @@ export function BacklogGame({
           h={400}
           w={"100%"}
           style={{
-            background: `url(${image && image.split("50")[0].concat(400)})`,
             backgroundSize: "cover",
             backgroundPosition: "top center",
+            backgroundImage: `url(${image.split("50")[0].concat(400)})`,
           }}
         ></Box>
       </Card.Section>
@@ -108,7 +113,22 @@ export function BacklogGame({
             {profile_platform}
           </Text>
         </div>
-        <Badge variant="outline">25% off</Badge>
+        <Menu shadow="md" width={200}>
+          <Menu.Target>
+            <ActionIcon>
+              <IconDotsVertical />
+            </ActionIcon>
+          </Menu.Target>
+
+          <Menu.Dropdown>
+            <Menu.Item
+              icon={<IconTrash size={14} />}
+              onClick={() => deleteKey(id)}
+            >
+              Delete
+            </Menu.Item>
+          </Menu.Dropdown>
+        </Menu>
       </Group>
 
       <Card.Section className={classes.section} mt="md">

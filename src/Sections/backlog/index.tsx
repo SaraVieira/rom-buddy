@@ -40,7 +40,7 @@ export default function Backlog() {
               {...provided.draggableProps}
             >
               <BacklogGame
-                {...item}
+                index={index}
                 dragHandleProps={provided.dragHandleProps}
               />
             </div>
