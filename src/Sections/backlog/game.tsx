@@ -65,7 +65,7 @@ const useStyles = createStyles((theme) => ({
 export function BacklogGame({ index }: any) {
   const { toggleGameState, backlog, deleteKey } = useBacklog();
   const { classes } = useStyles();
-  if (!backlog[index]) return null;
+  if (!backlog.find((g: any) => g.id === index)) return null;
   const {
     id,
     game_name,
@@ -76,8 +76,7 @@ export function BacklogGame({ index }: any) {
     profile_steam,
     image = "",
     state,
-  } = backlog[index];
-
+  } = backlog.find((g: any) => g.id === index);
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
@@ -102,7 +101,7 @@ export function BacklogGame({ index }: any) {
         <Menu shadow="md" width={200}>
           <Menu.Target>
             <ActionIcon>
-              <IconDotsVertical />
+              <IconDotsVertical size={20} />
             </ActionIcon>
           </Menu.Target>
 

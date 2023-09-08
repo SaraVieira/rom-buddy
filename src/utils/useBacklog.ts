@@ -35,7 +35,6 @@ export const useBacklog = () => {
     await store.save();
     await storeIntoState();
   };
-
   const storeIntoState = async () => {
     const a = await store.values();
     setBacklog(a);
@@ -45,23 +44,8 @@ export const useBacklog = () => {
     storeIntoState();
   }, []);
 
-  const move_game = (old_index: number, new_index: number) => {
-    const newBacklog = backlog
-    if (new_index >= newBacklog.length) {
-        var k = new_index - newBacklog.length + 1;
-        while (k--) {
-            newBacklog.push(undefined);
-        }
-    }
-    newBacklog.splice(new_index, 0, newBacklog.splice(old_index, 1)[0]);
-    setBacklog(newBacklog)
-    store.clear()
-    backlog.map(set)
-};
-
 return {
     toggleGameState,
-    move_game,
     backlog,
     set,
     get,
