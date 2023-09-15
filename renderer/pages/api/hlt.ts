@@ -7,10 +7,6 @@ const BASE_URL: string = 'https://howlongtobeat.com/';
 const SEARCH_URL: string = `${BASE_URL}api/search`;
 const IMAGE_URL: string = `${BASE_URL}games/`;
 
-type ResponseData = {
-  message: string;
-};
-
 const searchParams = {
   "searchType": "games",
   "searchPage": 1,
@@ -43,7 +39,7 @@ const searchParams = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ResponseData>
+  res: NextApiResponse<HLTGame[]>
 ) {
   const { game } = req.query as { game: string };
   const games = await fetch(SEARCH_URL, {

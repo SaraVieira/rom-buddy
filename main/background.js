@@ -32,12 +32,25 @@ app.on('window-all-closed', () => {
   app.quit()
 })
 
-const store = new Store({ name: 'backlog' })
+
+// backlog
+const backlogStore = new Store({ name: 'backlog' })
 
 ipcMain.on('get-backlog', (event) => {
-  event.returnValue = store.get('backlog') || []
+  event.returnValue = backlogStore.get('backlog') || []
 })
 
 ipcMain.on('set-backlog', (event, arg) => {
-  store.set('backlog', JSON.parse(arg))
+  backlogStore.set('backlog', JSON.parse(arg))
+})
+
+// backlog
+const raStore = new Store({ name: 'ra' })
+
+ipcMain.on('get-ra', (event) => {
+  event.returnValue = raStore.get('ra')
+})
+
+ipcMain.on('set-ra', (event, arg) => {
+  raStore.set('ra', arg)
 })
