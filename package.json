@@ -1,36 +1,37 @@
 {
-  "name": "rom-buddy",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "main": "app/background.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "tauri": "tauri"
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
     "@mantine/core": "^6.0.20",
     "@mantine/hooks": "^6.0.20",
-    "@tabler/icons-react": "^2.33.0",
-    "@tauri-apps/api": "^1.4.0",
-    "localforage": "^1.10.0",
-    "match-sorter": "^6.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
-    "sort-by": "^1.2.0",
-    "tauri-plugin-store-api": "https://github.com/tauri-apps/tauri-plugin-store#v1",
-    "uuid": "^9.0.0"
+    "@mantine/next": "^6.0.20",
+    "@tabler/icons-react": "^2.34.0",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "lodash-es": "^4.17.21",
+    "react-query": "^3.39.3",
+    "user-agents": "^1.0.1444",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.4.0",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.4",
-    "typescript": "^5.2.2",
-    "@types/uuid": "^9.0.3",
-    "vite": "^4.4.9"
+    "@types/react": "18.2.21",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "next": "^12.3.4",
+    "nextron": "^8.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "5.2.2"
   }
 }
