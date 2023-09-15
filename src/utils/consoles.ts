@@ -1,8 +1,57 @@
+import gc from '../assets/consoles/Nintendo GameCube Controller 600dpi.png'
+import gameboy from '../assets/consoles/Nintendo Gameboy 600dpi.png'
+import gg from '../assets/consoles/Sega Game Gear 600dpi.png'
+import ngp from '../assets/consoles/SNK Neo Geo Pocket Color 600dpi.png'
+import intellivision from '../assets/consoles/Mattle Intellivision Controller 600dpi.png'
+import gbc from '../assets/consoles/Nintendo Gameboy Color yellow 600dpi.png'
+import pokemini from '../assets/consoles/Nintendo Pokemon Blue 600dpi.png'
+import ms from  '../assets/consoles/Sega Master System Controller 600dpi.png'
+import snes from '../assets/consoles/Nintendo PAL Super Nintendo Controller.png'
+import nec from '../assets/consoles/NEC TurboGrafx 16 Controller 600dpi.png'
+import c64 from '../assets/consoles/Commodore 64 Keyboard 600dpi.png'
+import switchConsole from '../assets/consoles/Nintendo Switch 600dpi.png'
+import vb from '../assets/consoles/Nintendo Virtual Boy Controller 600dpi.png'
+import bandaiRed from '../assets/consoles/Bandai Wonderswan Color Crystal Red Wine 600dpi.png'
+import xbox360 from '../assets/consoles/Xbox 360 Controller 600dpi.png'
+import arcadeStickMortalKombat from '../assets/consoles/Arcade Stick Street mortal kombat 600dpi.png';
+import ThreeDO from "../assets/consoles/Panasonic 3DO Controller 600dpi.png"
+import amiga from '../assets/consoles/Commodore 64 Keyboard 600dpi.png'
+import atari2600 from '../assets/consoles/Atari 2600 Controller 600dpi.png'
+import atari7800 from '../assets/consoles/Atari 7800 600dpi.png'
+import jaguar from '../assets/consoles/Atari Jaguar 600dpi.png'
+import lynx from '../assets/consoles/Atari Lynx 600dpi.png'
+import commodore64 from '../assets/consoles/Commodore 64 Keyboard 600dpi.png'
+import colecovision from '../assets/consoles/Coleco Colecovision Controller 600dpi.png'
+import arcadeST from '../assets/consoles/Arcade Stick Street Fighter 600dpi.png'
+import dreamcast from '../assets/consoles/Sega Dreamcast Controller A 600dpi.png'
+import nes from '../assets/consoles/Nintendo NES Controller 600dpi.png'
+import ps2 from "../assets/consoles/Sony Playstation DaulShock 2 Controller 600dpi.png"
+import ps3 from '../assets/consoles/Sony Playstation DaulShock 3 Controller 600dpi.png'
+import ps4 from '../assets/consoles/Sony Playstation DaulShock 4 Controller 600dpi.png'
+import psp from '../assets/consoles/Sony PSP 600dpi.png'
+import psvita from '../assets/consoles/Sony Playstation Vita 600dpi.png'
+import psx from '../assets/consoles/Sony PlayStation Daul Analog Controller 600dpi.png'
+import staurn from '../assets/consoles/Sega Saturn Controller C 600dpi.png'
+import md from '../assets/consoles/Sega Mega Drive Controller A 600dpi.png'
+import arcadeBlack from '../assets/consoles/Arcade Stick Black 600dpi.png'
+import gw from '../assets/consoles/Nintendo Game & Watch Legend of Zelda 600dpi.png'
+import arcadeBlackGray from '../assets/consoles/Arcade Stick Gray Black Red 600dpi.png'
+import n3ds from '../assets/consoles/Nintendo 3DS 600dpi.png'
+import ds from '../assets/consoles/Nintendo DS lite 600dpi.png'
+import n64 from '../assets/consoles/Nintendo N64 Controller 600dpi.png'
+import wii from '../assets/consoles/Nintendo Wii Controller 600dpi.png'
+import wiiu from '../assets/consoles/Nintendo Wii U 600dpi.png'
+import xbox from '../assets/consoles/Xbox Controller 600dpi.png'
+import bandaiBlue from '../assets/consoles/Bandai Wonderswan Color Crystal Blue Violet 600dpi.png'
+import gba from '../assets/consoles/Nintendo Game Boy Advance 600dpi.png'
+import snk from '../assets/consoles/SNK NEO GEO Arcade Stick 4 Button 600dpi.png'
+import neogeocd from '../assets/consoles/SNK Neo Geo CD 600dpi.png'
+
 export const consoles = [
   {
     name: "3DO Interactive Multiplayer",
     folderNames: { emulationStation: "3DO", miyoo: "PANASONIC" },
-    image: "Panasonic 3DO Controller 600dpi.png",
+    image: ThreeDO,
   },
   {
     name: "Adventure Game Studio Game Engine",
@@ -12,22 +61,22 @@ export const consoles = [
   {
     name: "Commodore Amiga",
     folderNames: { emulationStation: "amiga", miyoo: "AMIGA" },
-    image: "Commodore 64 Keyboard 600dpi",
+    image: amiga,
   },
   {
     name: "Commodore Amiga 1200",
     folderNames: { emulationStation: "amiga1200", miyoo: "AMIGA" },
-    image: "Commodore 64 Keyboard 600dpi",
+    image: amiga,
   },
   {
     name: "Commodore Amiga 600",
     folderNames: { emulationStation: "amiga600", miyoo: "AMIGA" },
-    image: "Commodore 64 Keyboard 600dpi",
+    image: amiga,
   },
   {
     name: "Commodore Amiga CD32",
     folderNames: { emulationStation: "amigacd32", miyoo: "AMIGACD" },
-    image: "Commodore 64 Keyboard 600dpi",
+    image: amiga,
   },
   {
     name: "Amstrad CPC",
@@ -52,7 +101,7 @@ export const consoles = [
   {
     name: "Arcade",
     folderNames: { emulationStation: "arcade", miyoo: "ARCADE" },
-    image: "Arcade Stick Street mortal kombat 600dpi.png",
+    image: arcadeStickMortalKombat,
   },
   {
     name: "Emerson Arcadia 2001",
@@ -72,7 +121,7 @@ export const consoles = [
   {
     name: "Atari 2600",
     folderNames: { emulationStation: "atari2600", miyoo: "ATARI" },
-    image: "Atari 2600 Controller 600dpi.png",
+    image: atari2600,
   },
   {
     name: "Atari 5200",
@@ -85,7 +134,7 @@ export const consoles = [
       emulationStation: "atari7800",
       miyoo: "SEVENTYEIGHTHUNDRED",
     },
-    image: "Atari 7800 600dpi.png",
+    image: atari7800,
   },
   {
     name: "Atari 800",
@@ -98,14 +147,14 @@ export const consoles = [
       emulationStation: "atarijaguar",
       miyoo: "JAGUAR",
     },
-    image: "Atari Jaguar 600dpi.png",
+    image: jaguar,
   },
   {
     name: "Atari Jaguar CD",
     folderNames: {
       emulationStation: "atarijaguarcd",
     },
-    image: "Atari Jaguar 600dpi.png",
+    image: jaguar,
   },
   {
     name: "Atari Lynx",
@@ -113,7 +162,7 @@ export const consoles = [
       emulationStation: "atarilynx",
       miyoo: "LYNX",
     },
-    image: "Atari Lynx 600dpi.png",
+    image: lynx,
   },
   {
     name: "Atari ST",
@@ -150,7 +199,7 @@ export const consoles = [
       emulationStation: "c64",
       miyoo: "COMMODORE",
     },
-    image: "Commodore 64 Keyboard 600dpi.png",
+    image: commodore64,
   },
   {
     name: "Cave Story",
@@ -201,7 +250,7 @@ export const consoles = [
       emulationStation: "colecovision",
       miyoo: "COLECO",
     },
-    image: "Coleco Colecovision Controller 600dpi.png",
+    image: colecovision,
   },
   {
     name: "Capcom Play System",
@@ -209,7 +258,7 @@ export const consoles = [
       emulationStation: "cps",
       miyoo: "CPS",
     },
-    image: "Arcade Stick Street Fighter 600dpi.png",
+    image: arcadeST,
   },
   {
     name: "Capcom Play System I",
@@ -217,7 +266,7 @@ export const consoles = [
       emulationStation: "cps1",
       miyoo: "CPS1",
     },
-    image: "Arcade Stick Street Fighter 600dpi.png",
+    image: arcadeST,
   },
   {
     name: "Capcom Play System II",
@@ -225,7 +274,7 @@ export const consoles = [
       emulationStation: "cps2",
       miyoo: "CPS2",
     },
-    image: "Arcade Stick Street Fighter 600dpi.png",
+    image: arcadeST,
   },
   {
     name: "Capcom Play System III",
@@ -233,7 +282,7 @@ export const consoles = [
       emulationStation: "cps3",
       miyoo: "CPS3",
     },
-    image: "Arcade Stick Street Fighter 600dpi.png",
+    image: arcadeST,
   },
   {
     name: "VTech CreatiVision",
@@ -277,7 +326,7 @@ export const consoles = [
     folderNames: {
       emulationStation: "dreamcast",
     },
-    image: "Sega Dreamcast Controller A 600dpi.png",
+    image: dreamcast,
   },
   {
     name: "EasyRPG Game Engine",
@@ -291,44 +340,44 @@ export const consoles = [
     name: "NES",
     folderNames: {
       emulationStation: ["nes", "famicon"],
-      miyoo: "FC",
+      miyoo: ["FC"],
     },
-    image: "Nintendo NES Controller 600dpi.png",
+    image: nes,
   },
   {
     name: "Sony Playstation 2",
     folderNames: {
       emulationStation: ["ps2"],
     },
-    image: "Sony Playstation DaulShock 2 Controller 600dpi.png",
+    image: ps2,
   },
   {
     name: "Sony Playstation 3",
     folderNames: {
       emulationStation: ["ps3"],
     },
-    image: "Sony Playstation DaulShock 3 Controller 600dpi.png",
+    image: ps3,
   },
   {
     name: "Sony Playstation 4",
     folderNames: {
       emulationStation: ["ps4"],
     },
-    image: "Sony Playstation DaulShock 4 Controller 600dpi.png",
+    image: ps4,
   },
   {
     name: "Sony Playstation Portable",
     folderNames: {
       emulationStation: ["psp"],
     },
-    image: "Sony PSP 600dpi.png",
+    image: psp,
   },
   {
     name: "Sony Playstation Vita",
     folderNames: {
       emulationStation: ["psvita"],
     },
-    image: "Sony Playstation Vita 600dpi.png",
+    image: psvita,
   },
   {
     name: "Sony Playstation",
@@ -336,14 +385,14 @@ export const consoles = [
       emulationStation: ["psx"],
       miyoo: ["PS"],
     },
-    image: "Sony PlayStation Daul Analog Controller 600dpi.png",
+    image: psx,
   },
   {
     name: "Sega Saturn",
     folderNames: {
       emulationStation: ["saturn", "saturnjs"],
     },
-    image: "Sega Saturn Controller C 600dpi.png",
+    image: staurn,
   },
   {
     name: "Sega 32X",
@@ -351,7 +400,7 @@ export const consoles = [
       emulationStation: ["sega32x", "sega32xjp", "sega32xna"],
       miyoo: ["THIRTYTWOX"],
     },
-    image: "Sega Mega Drive Controller A 600dpi.png",
+    image: md,
   },
   {
     name: "Sega Genesis/Mega Drive",
@@ -359,7 +408,7 @@ export const consoles = [
       emulationStation: ["genesis", "megadrive", "megadrivejp"],
       miyoo: ["MD"],
     },
-    image: "Sega Mega Drive Controller A 600dpi.png",
+    image: md,
   },
   {
     name: "Sega CD",
@@ -367,7 +416,7 @@ export const consoles = [
       emulationStation: ["megacd", "megacdjp"],
       miyoo: ["segacd"]
     },
-    image: "Sega Mega Drive Controller A 600dpi.png",
+    image: md,
   },
   {
     name: "Sega SG-1000",
@@ -383,7 +432,7 @@ export const consoles = [
       emulationStation: ["fba"],
       miyoo: ["ARCADE"],
     },
-    image: "Arcade Stick Black 600dpi.png",
+    image: arcadeBlack,
   },
   {
     name: "FinalBurn Neo",
@@ -391,7 +440,7 @@ export const consoles = [
       emulationStation: ["fbneo"],
       miyoo: ["ARCADE"],
     },
-    image: "Arcade Stick Black 600dpi.png",
+    image: arcadeBlack,
   },
   {
     name: "Nintendo Famicom Disk System",
@@ -399,7 +448,7 @@ export const consoles = [
       emulationStation: ["fds"],
       miyoo: ["FDS"],
     },
-    image: "Nintendo NES Controller 600dpi.png",
+    image: nes,
   },
   {
     name: "Fujitsu FM Towns",
@@ -421,7 +470,7 @@ export const consoles = [
       emulationStation: ["gameandwatch"],
       miyoo: ["GW"],
     },
-    image: "Nintendo Game & Watch Legend of Zelda 600dpi.png",
+    image: gw,
   },
   {
     name: "Hartung Game Master",
@@ -464,7 +513,7 @@ export const consoles = [
       emulationStation: ["mame"],
       miyoo: ["ARCADE"],
     },
-    image: "Arcade Stick Gray Black Red 600dpi.png",
+    image: arcadeBlackGray,
   },
   {
     name: "AdvanceMAME",
@@ -472,7 +521,7 @@ export const consoles = [
       emulationStation: ["mame-advmame"],
       miyoo: ["ARCADE"],
     },
-    image: "Arcade Stick Gray Black Red 600dpi.png",
+    image: arcadeBlackGray,
   },
   {
     name: "MAME4ALL",
@@ -480,7 +529,7 @@ export const consoles = [
       emulationStation: ["mame-mame4all"],
       miyoo: ["ARCADE"],
     },
-    image: "Arcade Stick Gray Black Red 600dpi.png",
+    image: arcadeBlackGray,
   },
   {
     name: "Multi Emulator Super System",
@@ -494,56 +543,57 @@ export const consoles = [
     folderNames: {
       emulationStation: ["n3ds"],
     },
-    image: "Nintendo 3DS 600dpi.png",
+    image: n3ds,
   },
   {
     name: "Nintendo DS",
     folderNames: {
       emulationStation: ["ds"],
+      miyoo: ["DS"]
     },
-    image: "Nintendo DS 600dpi.png",
+    image: ds,
   },
   {
     name: "Nintendo 64",
     folderNames: {
       emulationStation: ["n64"],
     },
-    image: "Nintendo N64 Controller 600dpi.png",
+    image: n64,
   },
   {
     name: "Nintendo 64DD",
     folderNames: {
       emulationStation: ["n64dd"],
     },
-    image: "Nintendo N64 Controller 600dpi.png",
+    image: n64,
   },
   {
     name: "Nintendo Wii",
     folderNames: {
       emulationStation: ["wii"],
     },
-    image: "Nintendo Wii Controller 600dpi.png",
+    image: wii,
   },
   {
     name: "Nintendo Wii U",
     folderNames: {
       emulationStation: ["wiiu"],
     },
-    image: "Nintendo Wii U 600dpi.png",
+    image: wiiu,
   },
   {
     name: "Microsoft Xbox",
     folderNames: {
       emulationStation: ["xbox"],
     },
-    image: "Xbox Controller 600dpi.png",
+    image: xbox,
   },
   {
     name: "Microsoft Xbox 360",
     folderNames: {
       emulationStation: ["xbox360"],
     },
-    image: "Xbox 360 Controller 600dpi.png",
+    image: xbox360,
   },
   {
     name: "Sinclair ZX81",
@@ -605,7 +655,7 @@ export const consoles = [
     image: null,
   },
   {
-    name: " Solarus Game Engine",
+    name: "Solarus Game Engine",
     folderNames: {
       emulationStation: ["solarus"],
     },
@@ -718,7 +768,7 @@ export const consoles = [
       emulationStation: ["wonderswan"],
       miyoo: ["WS"],
     },
-    image: "Bandai Wonderswan Color Crystal Blue Violet 600dpi",
+    image: bandaiBlue,
   },
   {
     name: "Bandai WonderSwan Color",
@@ -726,7 +776,7 @@ export const consoles = [
       emulationStation: ["wonderswancolor"],
       miyoo: ["WS"],
     },
-    image: "Bandai Wonderswan Color Crystal Red Wine 600dpi.png",
+    image: bandaiRed,
   },
   {
     name: "Nintendo Virtual Boy",
@@ -734,7 +784,7 @@ export const consoles = [
       emulationStation: ["virtualboy"],
       miyoo: ["VB"],
     },
-    image: "Nintendo Virtual Boy Controller 600dpi.png",
+    image: vb,
   },
   {
     name: "Philips Videopac G7000",
@@ -750,7 +800,7 @@ export const consoles = [
       emulationStation: ["vic20"],
       miyoo: ["COMMODORE"],
     },
-    image: "Commodore 64 Keyboard 600dpi.png",
+    image: c64,
   },
   {
     name: "Smith Engineering Vectrex",
@@ -758,7 +808,7 @@ export const consoles = [
       emulationStation: ["vectrex"],
       miyoo: ["VECTREX"],
     },
-    image: "Commodore 64 Keyboard 600dpi.png",
+    image: null,
   },
   {
     name: "Uzebox Open Source Console",
@@ -802,7 +852,7 @@ export const consoles = [
     folderNames: {
       emulationStation: ["switch"],
     },
-    image: "Nintendo Switch 600dpi.png",
+    image: switchConsole,
   },
   {
     name: "Super Nintendo",
@@ -810,7 +860,7 @@ export const consoles = [
       emulationStation: ["snes", "snesna", "sfc"],
       miyoo: ["SFC"],
     },
-    image: "Nintendo PAL Super Nintendo Controller.png",
+    image: snes,
   },
   {
     name: "NEC TurboGrafx-CD",
@@ -818,7 +868,7 @@ export const consoles = [
       emulationStation: ["tg-cd"],
       miyoo: ["PCECD"],
     },
-    image: "NEC TurboGrafx 16 Controller 600dpi.png",
+    image: nec,
   },
   {
     name: "Watara Supervision",
@@ -834,7 +884,7 @@ export const consoles = [
       emulationStation: ["supergrafx"],
       miyoo: ["SGFX"],
     },
-    image: "NEC TurboGrafx 16 Controller 600dpi.png",
+    image: nec,
   },
   {
     name: "NEC PC-8800 Series",
@@ -864,7 +914,7 @@ export const consoles = [
       emulationStation: ["pokemini"],
       miyoo: ["POKE"],
     },
-    image: "Nintendo Pokemon Blue 600dpi.png",
+    image: pokemini,
   },
   {
     name: "Tiger Electronics Game.com",
@@ -879,7 +929,7 @@ export const consoles = [
       emulationStation: ["gamegear"],
       miyoo: ["GG"],
     },
-    image: "Sega Game Gear 600dpi.png",
+    image: gg,
   },
   {
     name: "Nintendo Game Boy",
@@ -887,7 +937,7 @@ export const consoles = [
       emulationStation: ["gb"],
       miyoo: ["GB"],
     },
-    image: "Nintendo Gameboy 600dpi.png",
+    image: gameboy,
   },
   {
     name: "Nintendo Game Boy Advance",
@@ -895,7 +945,7 @@ export const consoles = [
       emulationStation: ["gba"],
       miyoo: ["GBA"],
     },
-    image: "Nintendo Game Boy Advance 600dpi.png",
+    image: gba,
   },
   {
     name: "Nintendo Game Boy Color",
@@ -903,14 +953,14 @@ export const consoles = [
       emulationStation: ["gbc"],
       miyoo: ["GBC"],
     },
-    image: "Nintendo Gameboy Color yellow 600dpi.png",
+    image: gbc,
   },
   {
     name: "Nintendo GameCube",
     folderNames: {
       emulationStation: ["gc"],
     },
-    image: "Nintendo GameCube Controller 600dpi.png",
+    image: gc,
   },
   {
     name: "Mattel Electronics Intellivision",
@@ -918,7 +968,7 @@ export const consoles = [
       emulationStation: ["intellivision"],
       miyoo: ["INTELLIVISION"],
     },
-    image: "Mattle Intellivision Controller 600dpi.png",
+    image: intellivision,
   },
   {
     name: "Sega Master System",
@@ -926,7 +976,7 @@ export const consoles = [
       emulationStation: ["mastersystem"],
       miyoo: ["MS"],
     },
-    image: "Sega Master System Controller 600dpi.png",
+    image: ms,
   },
   {
     name: "Sega Model 2",
@@ -1015,7 +1065,7 @@ export const consoles = [
       emulationStation: ["tg16", "pcengine"],
       miyoo: ["PCE"]
     },
-    image: "NEC TurboGrafx 16 Controller 600dpi.png"
+    image: nec
   },
   {
     name: "NEC TurboGrafx CD",
@@ -1023,7 +1073,7 @@ export const consoles = [
       emulationStation: ["pcenginecd"],
       miyoo: ["PCECD"]
     },
-    image: "NEC TurboGrafx 16 Controller 600dpi.png"
+    image: nec
   },
   {
     name: "Sega NAOMI",
@@ -1045,7 +1095,7 @@ export const consoles = [
       emulationStation: ["neogeo"],
       miyoo: ["NEOGEO"]
     },
-    image: "SNK NEO GEO Arcade Stick 4 Button 600dpi.png"
+    image: snk
   },
   {
     name: "SNK Neo Geo CD",
@@ -1053,7 +1103,7 @@ export const consoles = [
       emulationStation: ["neogeocd", "neogeocdjp"],
       miyoo: ["NEOCD"]
     },
-    image: "SNK Neo Geo CD 600dpi.png"
+    image: neogeocd
   },
   {
     name: "SNK Neo Geo Pocket",
@@ -1061,7 +1111,7 @@ export const consoles = [
       emulationStation: ["ngp"],
       miyoo: ["NGP"]
     },
-    image: "SNK Neo Geo Pocket Color 600dpi.png"
+    image: ngp
   },
   {
     name: "SNK Neo Geo Pocket Color",
@@ -1069,7 +1119,7 @@ export const consoles = [
       emulationStation: ["ngpc"],
       miyoo: ["NGP"]
     },
-    image: "SNK Neo Geo Pocket Color 600dpi.png"
+    image: ngp
   },
   {
     name: "Magnavox Odyssey2",

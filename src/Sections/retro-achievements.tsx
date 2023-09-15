@@ -5,9 +5,10 @@ export default () => {
   const [data, setData] = useState();
 
   useEffect(async () => {
-    await invoke("get_user_retro_summary", {
+    const a = await invoke("get_user_retro_summary", {
       username: "NikkitaFTW",
     });
+    console.log(a);
   });
 
   return JSON.stringify(data);

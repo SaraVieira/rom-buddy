@@ -2,7 +2,11 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use reqwest::header::{HeaderMap, HeaderValue, CONTENT_TYPE, ORIGIN, REFERER, USER_AGENT};
-use std::{collections::HashMap, fs};
+use std::{
+    collections::HashMap,
+    fs::{self},
+};
+use walkdir::{DirEntry, WalkDir};
 
 fn get_envs() -> HashMap<String, String> {
     let file = fs::read_to_string("../.env").expect("Should have been able to read the file");
@@ -11,10 +15,41 @@ fn get_envs() -> HashMap<String, String> {
 }
 
 #[tauri::command]
+fn get_user_roms() -> Vec<String> {
+    fn is_hidden(entry: &DirEntry) -> bool {
+        entry
+            .file_name()
+            .to_str()
+            .map(|s| s.starts_with("."))
+            .unwrap_or(false)
+    }
+
+    let walker = WalkDir::new("/Volumes/Miyoo/Roms").into_iter();
+    // for entry in walker.filter_entry(|e| !is_hidden(e)) {
+    //     println!(
+    //         "{} - {}",
+    //         entry.unwrap().path().display(),
+    //         &entry.unwrap().ty().display()
+    //     );
+    // }
+    let paths = fs::read_dir("/Volumes/Miyoo/Roms").unwrap();
+    let mut folder_paths: Vec<String> = vec![];
+
+    for path in paths {
+        let current_path = path.unwrap().path();
+        if current_path.is_dir() {
+            folder_paths.push(current_path.display().to_string());
+        }
+    }
+
+    folder_paths
+}
+
+#[tauri::command]
 fn get_user_retro_summary(username: &str) -> String {
     let envs = get_envs();
     let resp = reqwest::blocking::get(format!(
-        "https://retroachievements.org/API/API_GetUserSummary.php?z={}&y={}&u={}",
+        "https://retroachievements.org/API/API_GetUserRecentlyPlayedGames.php?z={}&y={}&u={}",
         envs["API_USERNAME"], envs["API_KEY"], username
     ))
     .unwrap()
@@ -56,7 +91,8 @@ fn main() {
         .plugin(tauri_plugin_store::Builder::default().build())
         .invoke_handler(tauri::generate_handler![
             get_user_retro_summary,
-            get_how_game
+            get_how_game,
+            get_user_roms
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
