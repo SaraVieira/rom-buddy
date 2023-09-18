@@ -1,17 +1,17 @@
 export const consoles = [
   {
     name: "3DO Interactive Multiplayer",
-    folderNames: { emulationStation: "3DO", miyoo: "PANASONIC" },
+    folderNames: { emulationStation: ["3DO"], miyoo: ["PANASONIC"] },
     extensions: [".bin", ".chd", ".cue", ".iso", ".7z", ".zip"],
   },
   {
     name: "Adventure Game Studio Game Engine",
-    folderNames: { emulationStation: "ags" },
+    folderNames: { emulationStation: ["ags"] },
     extensions: [".app", ".sh"],
   },
   {
     name: "Commodore Amiga",
-    folderNames: { emulationStation: "amiga", miyoo: "AMIGA" },
+    folderNames: { emulationStation: ["amiga"], miyoo: ["AMIGA"] },
     extensions: [
       ".adf",
       ".adz",
@@ -36,7 +36,7 @@ export const consoles = [
   },
   {
     name: "Commodore Amiga 1200",
-    folderNames: { emulationStation: "amiga1200", miyoo: "AMIGA" },
+    folderNames: { emulationStation: ["amiga1200"], miyoo: ["AMIGA"]},
     extensions: [
       ".adf",
       ".adz",
@@ -61,7 +61,7 @@ export const consoles = [
   },
   {
     name: "Commodore Amiga 600",
-    folderNames: { emulationStation: "amiga600", miyoo: "AMIGA" },
+    folderNames: { emulationStation: ["amiga600"], miyoo: ["AMIGA"] },
     extensions: [
       ".adf",
       ".adz",
@@ -86,7 +86,7 @@ export const consoles = [
   },
   {
     name: "Commodore Amiga CD32",
-    folderNames: { emulationStation: "amigacd32", miyoo: "AMIGACD" },
+    folderNames: { emulationStation: ["amigacd32"], miyoo: ["AMIGACD"] },
     extensions: [
       ".adf",
       ".adz",
@@ -111,52 +111,52 @@ export const consoles = [
   },
   {
     name: "Amstrad CPC",
-    folderNames: { emulationStation: "amstradcpc", miyoo: "CPC" },
+    folderNames: { emulationStation: ["amstradcpc"], miyoo: ["CPC"] },
     extensions: [".cdt", ".cpr", ".dsk", ".kcr", ".m3u", ".sna", ".tap", ".voc", ".7z", ".zip"],
   },
   {
     name: "Google Android",
-    folderNames: { emulationStation: "android" },
+    folderNames: { emulationStation: ["android"] },
     extensions: ["apk"],
   },
   {
     name: "Apple II",
-    folderNames: { emulationStation: "apple2" },
+    folderNames: { emulationStation: ["apple2"] },
     extensions: [".do", ".dsk", ".nib", ".po"],
   },
   {
     name: "Apple IIGS",
-    folderNames: { emulationStation: "apple2gs" },
+    folderNames: { emulationStation: ["apple2gs"] },
     extensions: [".2mg"],
   },
   {
     name: "Arcade",
-    folderNames: { emulationStation: "arcade", miyoo: "ARCADE" },
+    folderNames: { emulationStation: ["arcade"], miyoo: ["ARCADE"] },
     extensions: [".app", ".cmd", ".sh", ".7z", ".zip"],
   },
   {
     name: "Emerson Arcadia 2001",
-    folderNames: { emulationStation: "arcadia" },
+    folderNames: { emulationStation: ["arcadia"] },
     extensions: [".bin", ".7z", ".zip"],
   },
   {
     name: "Arduboy Miniature Game System",
-    folderNames: { emulationStation: "arduboy" },
+    folderNames: { emulationStation: ["arduboy"] },
     extensions: [".hex", ".7z", ".zip"],
   },
   {
     name: "Bally Astrocade",
-    folderNames: { emulationStation: "astrocde" },
+    folderNames: { emulationStation: ["astrocde"] },
     extensions: [".7z", ".zip"],
   },
   {
     name: "Atari 2600",
-    folderNames: { emulationStation: "atari2600", miyoo: "ATARI" },
+    folderNames: { emulationStation: ["atari2600"], miyoo: ["ATARI"] },
     extensions: [".a26", ".bin", ".7z", ".zip"],
   },
   {
     name: "Atari 5200",
-    folderNames: { emulationStation: "atari5200", miyoo: "FIFTYTWOHUNDRED" },
+    folderNames: { emulationStation: ["atari5200"], miyoo: ["FIFTYTWOHUNDRED"] },
     extensions: [".a52", ".atr", ".atx", ".bin", ".car", ".cas", ".cdm", ".rom", ".xex", ".xfd", ".7z", ".zip"],
   },
   {
@@ -169,87 +169,129 @@ export const consoles = [
   },
   {
     name: "Atari 800",
-    folderNames: { emulationStation: "atari800", miyoo: "EIGHTHUNDRED" },
+    folderNames: { emulationStation: ["atari800"], miyoo: ["EIGHTHUNDRED"] },
     extensions: [".a52", ".atr", ".atx", ".bin", ".car", ".cas", ".cdm", ".rom", ".xex", ".xfd", ".7z", ".zip"],
   },
   {
     name: "Atari Jaguar",
     folderNames: {
-      emulationStation: "atarijaguar",
-      miyoo: "JAGUAR",
+      emulationStation: ["atarijaguar"],
+      miyoo: ["JAGUAR"],
     },
     extensions: [".abs", ".bin", ".cdi", ".cof", ".cue", ".j64", ".jag", ".prg", ".rom", ".7z", ".zip"],
   },
   {
     name: "Atari Jaguar CD",
     folderNames: {
-      emulationStation: "atarijaguarcd",
+      emulationStation: ["atarijaguarcd"],
     },
     extensions: [".7z", ".zip"],
   },
   {
     name: "Atari Lynx",
     folderNames: {
-      emulationStation: "atarilynx",
-      miyoo: "LYNX",
+      emulationStation: ["atarilynx"],
+      miyoo: ["LYNX"],
     },
     extensions: [".lnx", ".o", ".7z", ".zip"],
   },
   {
     name: "Atari ST",
     folderNames: {
-      emulationStation: "atarist",
-      miyoo: "ATARIST",
+      emulationStation: ["atarist"],
+      miyoo: ["ATARIST"],
     },
+    extensions: [".st", ".msa", ".stx", ".dim", ".ipf", ".m3u", ".7z", ".zip"],
   },
   {
     name: "Atari XE",
     folderNames: {
-      emulationStation: "atarixe",
+      emulationStation: ["atarixe"],
     },
+    extensions: [".a52", ".atr", ".atx", ".bin", ".cas", ".cdm", ".xex", ".xfd", ".7z", ".zip"],
   },
   {
     name: "Sammy Corporation Atomiswave",
     folderNames: {
-      emulationStation: "atomiswave",
+      emulationStation: ["atomiswave"],
     },
+    extensions: [".bin", ".cdi", ".cue", ".dat", ".elf", ".gdi", ".iso", ".lst", ".m3u", ".7z", ".zip"],
   },
   {
     name: "Acorn Computers BBC Micro",
     folderNames: {
-      emulationStation: "bbcmicro",
+      emulationStation: ["bbcmicro"],
     },
+    extensions: [".dsd", ".img", ".ssd", ".7z", ".zip"],
   },
   {
     name: "Commodore 64",
     folderNames: {
-      emulationStation: "c64",
-      miyoo: "COMMODORE",
+      emulationStation: ["c64"],
+      miyoo: ["COMMODORE"],
     },
+    extensions: [
+      ".bin",
+      ".cmd",
+      ".crt",
+      ".d2m",
+      ".d4m",
+      ".d64",
+      ".d6z",
+      ".d71",
+      ".d7z",
+      ".d80",
+      ".d81",
+      ".d82",
+      ".d8z",
+      ".g41",
+      ".g4z",
+      ".g64",
+      ".g6z",
+      ".gz",
+      ".lnx",
+      ".m3u",
+      ".nbz",
+      ".nib",
+      ".p00",
+      ".prg",
+      ".t64",
+      ".tap",
+      ".vfl",
+      ".vsf",
+      ".x64",
+      ".x6z",
+      ".7z",
+      ".zip",
+    ],
   },
   {
     name: "Cave Story",
     folderNames: {
       emulationStation: "cavestory",
     },
+    extensions: [".exe", ".7z", ".zip"],
   },
   {
     name: "Philips CD-i",
     folderNames: {
       emulationStation: "cdimono1",
     },
+    extensions: [".chd", ".cue", ".iso"],
   },
   {
     name: "Commodore CDTV",
     folderNames: {
       emulationStation: "cdtv",
     },
+    extensions: [".ccd", ".chd", ".cue", ".iso", ".m3u", ".mds", ".nrg", ".rp9", ".7z", ".zip"],
   },
   {
     name: "ChaiLove Game Engine",
     folderNames: {
       emulationStation: "chailove",
     },
+    extensions: [".chai", ".chailove", ".7z", ".zip"],
   },
   {
     name: "Fairchild Channel F",
@@ -257,12 +299,14 @@ export const consoles = [
       emulationStation: "channelf",
       miyoo: "FAIRCHILD",
     },
+    extensions: [".bin", ".chf", ".7z", ".zip"],
   },
   {
     name: "Tandy Color Computer",
     folderNames: {
       emulationStation: "coco",
     },
+    extensions: [".cas", ".ccc", ".dsk", ".rom"],
   },
   {
     name: "Coleco ColecoVision",
@@ -270,6 +314,22 @@ export const consoles = [
       emulationStation: "colecovision",
       miyoo: "COLECO",
     },
+    extensions: [
+      ".bin",
+      ".cas",
+      ".col",
+      ".cv",
+      ".dsk",
+      ".m3u",
+      ".mx1",
+      ".mx2",
+      ".ri",
+      ".rom",
+      ".sc",
+      ".sg",
+      ".7z",
+      ".zip",
+    ],
   },
   {
     name: "Capcom Play System",
@@ -277,6 +337,7 @@ export const consoles = [
       emulationStation: "cps",
       miyoo: "CPS",
     },
+    extensions: [".7z", ".zip"],
   },
   {
     name: "Capcom Play System I",
@@ -284,6 +345,7 @@ export const consoles = [
       emulationStation: "cps1",
       miyoo: "CPS1",
     },
+    extensions: [".7z", ".zip"],
   },
   {
     name: "Capcom Play System II",
@@ -291,6 +353,7 @@ export const consoles = [
       emulationStation: "cps2",
       miyoo: "CPS2",
     },
+    extensions: [".7z", ".zip"],
   },
   {
     name: "Capcom Play System III",
@@ -298,6 +361,7 @@ export const consoles = [
       emulationStation: "cps3",
       miyoo: "CPS3",
     },
+    extensions: [".7z", ".zip"],
   },
   {
     name: "VTech CreatiVision",
@@ -350,6 +414,7 @@ export const consoles = [
       emulationStation: ["nes", "famicon"],
       miyoo: ["FC"],
     },
+    extensions: [".fds", ".nes", ".unf", ".unif", ".7z", ".zip"],
   },
   {
     name: "Sony Playstation 2",

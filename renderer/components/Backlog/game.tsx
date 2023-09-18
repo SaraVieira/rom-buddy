@@ -1,15 +1,4 @@
-import {
-  Card,
-  Text,
-  Group,
-  createStyles,
-  Center,
-  rem,
-  Box,
-  SegmentedControl,
-  Menu,
-  ActionIcon,
-} from "@mantine/core";
+import { Card, Text, Group, createStyles, Center, rem, Box, SegmentedControl, Menu, ActionIcon } from "@mantine/core"
 import {
   IconBrandSteam,
   IconCalendarEvent,
@@ -17,15 +6,14 @@ import {
   IconDotsVertical,
   IconStarHalfFilled,
   IconTrash,
-} from "@tabler/icons-react";
-import { secondsToHms } from "../../utils/times";
-import { useBacklog } from "../../hooks/useBacklog";
-import { HLTGame } from "../../utils/types";
+} from "@tabler/icons-react"
+import { secondsToHms } from "../../../utils/times"
+import { useBacklog } from "../../hooks/useBacklog"
+import { HLTGame } from "../../../utils/types"
 
 const useStyles = createStyles((theme) => ({
   card: {
-    backgroundColor:
-      theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
+    backgroundColor: theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
   },
 
   imageSection: {
@@ -33,9 +21,7 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    borderBottom: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
-    }`,
+    borderBottom: `${rem(1)} solid ${theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]}`,
   },
 
   label: {
@@ -49,34 +35,19 @@ const useStyles = createStyles((theme) => ({
 
   section: {
     padding: theme.spacing.md,
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]
-    }`,
+    borderTop: `${rem(1)} solid ${theme.colorScheme === "dark" ? theme.colors.dark[4] : theme.colors.gray[3]}`,
   },
 
   icon: {
     marginRight: rem(5),
-    color:
-      theme.colorScheme === "dark"
-        ? theme.colors.dark[2]
-        : theme.colors.gray[5],
+    color: theme.colorScheme === "dark" ? theme.colors.dark[2] : theme.colors.gray[5],
   },
-}));
+}))
 
 export function BacklogGame(game: HLTGame) {
-  const { toggleGameState, deleteKey } = useBacklog();
-  const { classes } = useStyles();
-  const {
-    id,
-    name,
-    profile_platform,
-    release_world,
-    review_score,
-    comp_main,
-    profile_steam,
-    image = "",
-    state,
-  } = game;
+  const { toggleGameState, deleteKey } = useBacklog()
+  const { classes } = useStyles()
+  const { id, name, profile_platform, release_world, review_score, comp_main, profile_steam, image = "", state } = game
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
@@ -106,10 +77,7 @@ export function BacklogGame(game: HLTGame) {
           </Menu.Target>
 
           <Menu.Dropdown>
-            <Menu.Item
-              icon={<IconTrash size={14} />}
-              onClick={() => deleteKey(id)}
-            >
+            <Menu.Item icon={<IconTrash size={14} />} onClick={() => deleteKey(id)}>
               Delete
             </Menu.Item>
           </Menu.Dropdown>
@@ -123,41 +91,22 @@ export function BacklogGame(game: HLTGame) {
 
         <Group spacing={8} mb={-8}>
           <Center>
-            <IconCalendarEvent
-              size="1.05rem"
-              className={classes.icon}
-              stroke={1.5}
-            />
+            <IconCalendarEvent size="1.05rem" className={classes.icon} stroke={1.5} />
             <Text size="xs">{release_world}</Text>
           </Center>
           <Center>
-            <IconStarHalfFilled
-              size="1.05rem"
-              className={classes.icon}
-              stroke={1.5}
-            />
+            <IconStarHalfFilled size="1.05rem" className={classes.icon} stroke={1.5} />
             <Text size="xs">{review_score}/100</Text>
           </Center>
 
           <Center>
-            <IconClockBolt
-              size="1.05rem"
-              className={classes.icon}
-              stroke={1.5}
-            />
+            <IconClockBolt size="1.05rem" className={classes.icon} stroke={1.5} />
             <Text size="xs">{secondsToHms(comp_main)}</Text>
           </Center>
           {profile_steam ? (
             <Center>
-              <IconBrandSteam
-                size="1.05rem"
-                className={classes.icon}
-                stroke={1.5}
-              />
-              <a
-                target="_blank"
-                href={`https://store.steampowered.com/app/${profile_steam}`}
-              >
+              <IconBrandSteam size="1.05rem" className={classes.icon} stroke={1.5} />
+              <a target="_blank" href={`https://store.steampowered.com/app/${profile_steam}`}>
                 <Text size="xs">Steam</Text>
               </a>
             </Center>
@@ -179,5 +128,5 @@ export function BacklogGame(game: HLTGame) {
         />
       </Card.Section>
     </Card>
-  );
+  )
 }

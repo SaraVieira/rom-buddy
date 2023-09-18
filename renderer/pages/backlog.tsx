@@ -1,8 +1,8 @@
-import { Group, Tabs, Text } from "@mantine/core";
-import { AutocompleteLoading } from "../components/Backlog/AutocompleteGames";
-import { BacklogGame } from "../components/Backlog/game";
-import { useBacklog } from "../hooks/useBacklog";
-import { HLTGame } from "../utils/types";
+import { Group, Tabs, Text } from "@mantine/core"
+import { AutocompleteLoading } from "../components/Backlog/AutocompleteGames"
+import { BacklogGame } from "../components/Backlog/game"
+import { useBacklog } from "../hooks/useBacklog"
+import { HLTGame } from "../../utils/types"
 
 const WrapperStyles = {
   display: "grid",
@@ -11,10 +11,10 @@ const WrapperStyles = {
   "@media (max-width: 1024px)": {
     gridTemplateColumns: "1fr",
   },
-};
+}
 
 export default function Backlog() {
-  const { backlog } = useBacklog();
+  const { backlog } = useBacklog()
 
   return (
     <>
@@ -58,5 +58,5 @@ export default function Backlog() {
         <Text align="center">wow, no backlog</Text>
       )}
     </>
-  );
+  )
 }

@@ -7,7 +7,7 @@ export default () => {
 
   const onInit = async () => {
     const { folder, files } = await ipcRenderer.invoke("get-folder")
-
+    console.log(files)
     if (files && folder) {
       setDir(folder)
       setFiles(files)

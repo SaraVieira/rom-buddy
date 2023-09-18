@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import UserAgent from 'user-agents'
-import { HLTGame } from "../../utils/types";
+import { HLTGame } from "../../../utils/types";
 
 
 const BASE_URL: string = 'https://howlongtobeat.com/';
