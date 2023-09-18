@@ -1,9 +1,10 @@
-import { app, ipcMain } from "electron";
+import { app, dialog, ipcMain } from "electron";
 import serve from "electron-serve";
 import Store from "electron-store";
 import { createWindow } from "./helpers";
 import path from "path";
 import fs from "fs";
+import { walkSync } from "./helpers/rom-detect";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -12,13 +13,17 @@ if (isProd) {
 } else {
   app.setPath("userData", `${app.getPath("userData")} (development)`);
 }
+let mainWindow;
 
 (async () => {
   await app.whenReady();
 
-  const mainWindow = createWindow("main", {
+  mainWindow = createWindow("main", {
     width: 1000,
     height: 600,
+    enableRemoteModule: false,
+    contextIsolation: true,
+    sandbox: true
   });
 
   if (isProd) {
@@ -57,32 +62,27 @@ ipcMain.on("set-ra", (event, arg) => {
 });
 
 // files
-const walkSync = (dir, filelist = []) => {
-  const files = fs.readdirSync(dir);
-  for (const file of files) {
-    const dirFile = path.join(dir, file);
-    const dirent = fs.statSync(dirFile);
-    const isHidden = dirFile.startsWith(".");
-    if (!isHidden) {
-      if (dirent.isDirectory()) {
-        var odir = {
-          folder: dirFile,
-          files: [],
-        };
-        odir.files = walkSync(dirFile, dir.files);
-        filelist.push(odir);
-      } else {
-        const extension = path.extname(dirFile);
-        filelist.push({
-          file: dirFile,
-          extension: extension ? extension.split(".")[1] : null,
-        });
-      }
-    }
-  }
-  return filelist;
 
-};
-ipcMain.handle("get-files", (event, dir) => {
-  return walkSync(dir);
+
+const romsStore = new Store({name: "roms"});
+
+ipcMain.handle("get-folder", () => {
+  return {
+    folder: (Object.keys(romsStore.store) || [])[0],
+    files: (Object.values(romsStore.store) || [])[0]
+  }
 });
+
+ipcMain.handle("get-files", (event, dir) => {
+  if(romsStore.has(dir)) return romsStore.get(dir)
+  const files = walkSync(dir);
+  romsStore.set(dir, files);
+  return files
+});
+
+ipcMain.handle('select-dirs', async (event, arg) => {
+  const result = await dialog.showOpenDialog(mainWindow, {
+    properties: ['openDirectory'],
+  })
+  return result.filePaths[0]
+})
