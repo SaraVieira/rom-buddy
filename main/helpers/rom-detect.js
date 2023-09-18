@@ -16,7 +16,7 @@ export const walkSync = (dir, filelist = []) => {
           const extension = path.extname(dirFile);
           filelist.push({
             file: dirFile,
-            extension: extension ? extension.split(".")[1] : null,
+            extension,
           });
         }
       }

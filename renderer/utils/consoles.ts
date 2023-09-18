@@ -1,140 +1,163 @@
-import gc from '../assets/consoles/Nintendo GameCube Controller 600dpi.png'
-import gameboy from '../assets/consoles/Nintendo Gameboy 600dpi.png'
-import gg from '../assets/consoles/Sega Game Gear 600dpi.png'
-import ngp from '../assets/consoles/SNK Neo Geo Pocket Color 600dpi.png'
-import intellivision from '../assets/consoles/Mattle Intellivision Controller 600dpi.png'
-import gbc from '../assets/consoles/Nintendo Gameboy Color yellow 600dpi.png'
-import pokemini from '../assets/consoles/Nintendo Pokemon Blue 600dpi.png'
-import ms from  '../assets/consoles/Sega Master System Controller 600dpi.png'
-import snes from '../assets/consoles/Nintendo PAL Super Nintendo Controller.png'
-import nec from '../assets/consoles/NEC TurboGrafx 16 Controller 600dpi.png'
-import c64 from '../assets/consoles/Commodore 64 Keyboard 600dpi.png'
-import switchConsole from '../assets/consoles/Nintendo Switch 600dpi.png'
-import vb from '../assets/consoles/Nintendo Virtual Boy Controller 600dpi.png'
-import bandaiRed from '../assets/consoles/Bandai Wonderswan Color Crystal Red Wine 600dpi.png'
-import xbox360 from '../assets/consoles/Xbox 360 Controller 600dpi.png'
-import arcadeStickMortalKombat from '../assets/consoles/Arcade Stick Street mortal kombat 600dpi.png';
-import ThreeDO from "../assets/consoles/Panasonic 3DO Controller 600dpi.png"
-import amiga from '../assets/consoles/Commodore 64 Keyboard 600dpi.png'
-import atari2600 from '../assets/consoles/Atari 2600 Controller 600dpi.png'
-import atari7800 from '../assets/consoles/Atari 7800 600dpi.png'
-import jaguar from '../assets/consoles/Atari Jaguar 600dpi.png'
-import lynx from '../assets/consoles/Atari Lynx 600dpi.png'
-import commodore64 from '../assets/consoles/Commodore 64 Keyboard 600dpi.png'
-import colecovision from '../assets/consoles/Coleco Colecovision Controller 600dpi.png'
-import arcadeST from '../assets/consoles/Arcade Stick Street Fighter 600dpi.png'
-import dreamcast from '../assets/consoles/Sega Dreamcast Controller A 600dpi.png'
-import nes from '../assets/consoles/Nintendo NES Controller 600dpi.png'
-import ps2 from "../assets/consoles/Sony Playstation DaulShock 2 Controller 600dpi.png"
-import ps3 from '../assets/consoles/Sony Playstation DaulShock 3 Controller 600dpi.png'
-import ps4 from '../assets/consoles/Sony Playstation DaulShock 4 Controller 600dpi.png'
-import psp from '../assets/consoles/Sony PSP 600dpi.png'
-import psvita from '../assets/consoles/Sony Playstation Vita 600dpi.png'
-import psx from '../assets/consoles/Sony PlayStation Daul Analog Controller 600dpi.png'
-import staurn from '../assets/consoles/Sega Saturn Controller C 600dpi.png'
-import md from '../assets/consoles/Sega Mega Drive Controller A 600dpi.png'
-import arcadeBlack from '../assets/consoles/Arcade Stick Black 600dpi.png'
-import gw from '../assets/consoles/Nintendo Game & Watch Legend of Zelda 600dpi.png'
-import arcadeBlackGray from '../assets/consoles/Arcade Stick Gray Black Red 600dpi.png'
-import n3ds from '../assets/consoles/Nintendo 3DS 600dpi.png'
-import ds from '../assets/consoles/Nintendo DS lite 600dpi.png'
-import n64 from '../assets/consoles/Nintendo N64 Controller 600dpi.png'
-import wii from '../assets/consoles/Nintendo Wii Controller 600dpi.png'
-import wiiu from '../assets/consoles/Nintendo Wii U 600dpi.png'
-import xbox from '../assets/consoles/Xbox Controller 600dpi.png'
-import bandaiBlue from '../assets/consoles/Bandai Wonderswan Color Crystal Blue Violet 600dpi.png'
-import gba from '../assets/consoles/Nintendo Game Boy Advance 600dpi.png'
-import snk from '../assets/consoles/SNK NEO GEO Arcade Stick 4 Button 600dpi.png'
-import neogeocd from '../assets/consoles/SNK Neo Geo CD 600dpi.png'
-
 export const consoles = [
   {
     name: "3DO Interactive Multiplayer",
     folderNames: { emulationStation: "3DO", miyoo: "PANASONIC" },
-    image: ThreeDO,
-    extensions: [".bin", ".chd", ".cue", ".iso", ".7z", ".zip"]
-    
+    extensions: [".bin", ".chd", ".cue", ".iso", ".7z", ".zip"],
   },
   {
     name: "Adventure Game Studio Game Engine",
     folderNames: { emulationStation: "ags" },
-    image: null,
-    extensions: [".app", ".sh"]
+    extensions: [".app", ".sh"],
   },
   {
     name: "Commodore Amiga",
     folderNames: { emulationStation: "amiga", miyoo: "AMIGA" },
-    image: amiga,
-    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
+    extensions: [
+      ".adf",
+      ".adz",
+      ".ccd",
+      ".chd",
+      ".cue",
+      ".dms",
+      ".fdi",
+      ".hdf",
+      ".hdz",
+      ".ipf",
+      ".rp9",
+      ".iso",
+      ".lha",
+      ".m3u",
+      ".mds",
+      ".nrg",
+      ".uae",
+      ".7z",
+      ".zip",
+    ],
   },
   {
     name: "Commodore Amiga 1200",
     folderNames: { emulationStation: "amiga1200", miyoo: "AMIGA" },
-    image: amiga,
-    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
-    
+    extensions: [
+      ".adf",
+      ".adz",
+      ".ccd",
+      ".chd",
+      ".cue",
+      ".dms",
+      ".fdi",
+      ".hdf",
+      ".hdz",
+      ".ipf",
+      ".rp9",
+      ".iso",
+      ".lha",
+      ".m3u",
+      ".mds",
+      ".nrg",
+      ".uae",
+      ".7z",
+      ".zip",
+    ],
   },
   {
     name: "Commodore Amiga 600",
     folderNames: { emulationStation: "amiga600", miyoo: "AMIGA" },
-    image: amiga,
-    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
+    extensions: [
+      ".adf",
+      ".adz",
+      ".ccd",
+      ".chd",
+      ".cue",
+      ".dms",
+      ".fdi",
+      ".hdf",
+      ".hdz",
+      ".ipf",
+      ".rp9",
+      ".iso",
+      ".lha",
+      ".m3u",
+      ".mds",
+      ".nrg",
+      ".uae",
+      ".7z",
+      ".zip",
+    ],
   },
   {
     name: "Commodore Amiga CD32",
     folderNames: { emulationStation: "amigacd32", miyoo: "AMIGACD" },
-    image: amiga,
-    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
+    extensions: [
+      ".adf",
+      ".adz",
+      ".ccd",
+      ".chd",
+      ".cue",
+      ".dms",
+      ".fdi",
+      ".hdf",
+      ".hdz",
+      ".ipf",
+      ".rp9",
+      ".iso",
+      ".lha",
+      ".m3u",
+      ".mds",
+      ".nrg",
+      ".uae",
+      ".7z",
+      ".zip",
+    ],
   },
   {
     name: "Amstrad CPC",
     folderNames: { emulationStation: "amstradcpc", miyoo: "CPC" },
-    image: null,
+    extensions: [".cdt", ".cpr", ".dsk", ".kcr", ".m3u", ".sna", ".tap", ".voc", ".7z", ".zip"],
   },
   {
     name: "Google Android",
     folderNames: { emulationStation: "android" },
-    image: null,
+    extensions: ["apk"],
   },
   {
     name: "Apple II",
     folderNames: { emulationStation: "apple2" },
-    image: null,
+    extensions: [".do", ".dsk", ".nib", ".po"],
   },
   {
     name: "Apple IIGS",
     folderNames: { emulationStation: "apple2gs" },
-    image: null,
+    extensions: [".2mg"],
   },
   {
     name: "Arcade",
     folderNames: { emulationStation: "arcade", miyoo: "ARCADE" },
-    image: arcadeStickMortalKombat,
+    extensions: [".app", ".cmd", ".sh", ".7z", ".zip"],
   },
   {
     name: "Emerson Arcadia 2001",
     folderNames: { emulationStation: "arcadia" },
-    image: null,
+    extensions: [".bin", ".7z", ".zip"],
   },
   {
     name: "Arduboy Miniature Game System",
     folderNames: { emulationStation: "arduboy" },
-    image: null,
+    extensions: [".hex", ".7z", ".zip"],
   },
   {
     name: "Bally Astrocade",
     folderNames: { emulationStation: "astrocde" },
-    image: null,
+    extensions: [".7z", ".zip"],
   },
   {
     name: "Atari 2600",
     folderNames: { emulationStation: "atari2600", miyoo: "ATARI" },
-    image: atari2600,
+    extensions: [".a26", ".bin", ".7z", ".zip"],
   },
   {
     name: "Atari 5200",
     folderNames: { emulationStation: "atari5200", miyoo: "FIFTYTWOHUNDRED" },
-    image: null,
+    extensions: [".a52", ".atr", ".atx", ".bin", ".car", ".cas", ".cdm", ".rom", ".xex", ".xfd", ".7z", ".zip"],
   },
   {
     name: "Atari 7800 ProSystem",
@@ -142,12 +165,12 @@ export const consoles = [
       emulationStation: "atari7800",
       miyoo: "SEVENTYEIGHTHUNDRED",
     },
-    image: atari7800,
+    extensions: [".a78", ".bin", ".7z", ".zip"],
   },
   {
     name: "Atari 800",
     folderNames: { emulationStation: "atari800", miyoo: "EIGHTHUNDRED" },
-    image: null,
+    extensions: [".a52", ".atr", ".atx", ".bin", ".car", ".cas", ".cdm", ".rom", ".xex", ".xfd", ".7z", ".zip"],
   },
   {
     name: "Atari Jaguar",
@@ -155,14 +178,14 @@ export const consoles = [
       emulationStation: "atarijaguar",
       miyoo: "JAGUAR",
     },
-    image: jaguar,
+    extensions: [".abs", ".bin", ".cdi", ".cof", ".cue", ".j64", ".jag", ".prg", ".rom", ".7z", ".zip"],
   },
   {
     name: "Atari Jaguar CD",
     folderNames: {
       emulationStation: "atarijaguarcd",
     },
-    image: jaguar,
+    extensions: [".7z", ".zip"],
   },
   {
     name: "Atari Lynx",
@@ -170,7 +193,7 @@ export const consoles = [
       emulationStation: "atarilynx",
       miyoo: "LYNX",
     },
-    image: lynx,
+    extensions: [".lnx", ".o", ".7z", ".zip"],
   },
   {
     name: "Atari ST",
@@ -178,28 +201,24 @@ export const consoles = [
       emulationStation: "atarist",
       miyoo: "ATARIST",
     },
-    image: null,
   },
   {
     name: "Atari XE",
     folderNames: {
       emulationStation: "atarixe",
     },
-    image: null,
   },
   {
     name: "Sammy Corporation Atomiswave",
     folderNames: {
       emulationStation: "atomiswave",
     },
-    image: null,
   },
   {
     name: "Acorn Computers BBC Micro",
     folderNames: {
       emulationStation: "bbcmicro",
     },
-    image: null,
   },
   {
     name: "Commodore 64",
@@ -207,35 +226,30 @@ export const consoles = [
       emulationStation: "c64",
       miyoo: "COMMODORE",
     },
-    image: commodore64,
   },
   {
     name: "Cave Story",
     folderNames: {
       emulationStation: "cavestory",
     },
-    image: null,
   },
   {
     name: "Philips CD-i",
     folderNames: {
       emulationStation: "cdimono1",
     },
-    image: null,
   },
   {
     name: "Commodore CDTV",
     folderNames: {
       emulationStation: "cdtv",
     },
-    image: null,
   },
   {
     name: "ChaiLove Game Engine",
     folderNames: {
       emulationStation: "chailove",
     },
-    image: null,
   },
   {
     name: "Fairchild Channel F",
@@ -243,14 +257,12 @@ export const consoles = [
       emulationStation: "channelf",
       miyoo: "FAIRCHILD",
     },
-    image: null,
   },
   {
     name: "Tandy Color Computer",
     folderNames: {
       emulationStation: "coco",
     },
-    image: null,
   },
   {
     name: "Coleco ColecoVision",
@@ -258,7 +270,6 @@ export const consoles = [
       emulationStation: "colecovision",
       miyoo: "COLECO",
     },
-    image: colecovision,
   },
   {
     name: "Capcom Play System",
@@ -266,7 +277,6 @@ export const consoles = [
       emulationStation: "cps",
       miyoo: "CPS",
     },
-    image: arcadeST,
   },
   {
     name: "Capcom Play System I",
@@ -274,7 +284,6 @@ export const consoles = [
       emulationStation: "cps1",
       miyoo: "CPS1",
     },
-    image: arcadeST,
   },
   {
     name: "Capcom Play System II",
@@ -282,7 +291,6 @@ export const consoles = [
       emulationStation: "cps2",
       miyoo: "CPS2",
     },
-    image: arcadeST,
   },
   {
     name: "Capcom Play System III",
@@ -290,14 +298,12 @@ export const consoles = [
       emulationStation: "cps3",
       miyoo: "CPS3",
     },
-    image: arcadeST,
   },
   {
     name: "VTech CreatiVision",
     folderNames: {
       emulationStation: "crvision",
     },
-    image: null,
   },
   {
     name: "Daphne Arcade LaserDisc Emulator",
@@ -305,14 +311,12 @@ export const consoles = [
       emulationStation: "cps3",
       miyoo: "DAPHNE",
     },
-    image: null,
   },
   {
     name: "Doom",
     folderNames: {
       emulationStation: "doom",
     },
-    image: null,
   },
   {
     name: "DOS (PC)",
@@ -320,21 +324,18 @@ export const consoles = [
       emulationStation: "dos",
       miyoo: "DOS",
     },
-    image: null,
   },
   {
     name: "Dragon Data Dragon 32",
     folderNames: {
       emulationStation: "dragon32",
     },
-    image: null,
   },
   {
     name: "Sega Dreamcast",
     folderNames: {
       emulationStation: "dreamcast",
     },
-    image: dreamcast,
   },
   {
     name: "EasyRPG Game Engine",
@@ -342,7 +343,6 @@ export const consoles = [
       emulationStation: "easyrpg",
       miyoo: "EASYRPG",
     },
-    image: null,
   },
   {
     name: "NES",
@@ -350,42 +350,36 @@ export const consoles = [
       emulationStation: ["nes", "famicon"],
       miyoo: ["FC"],
     },
-    image: nes,
   },
   {
     name: "Sony Playstation 2",
     folderNames: {
       emulationStation: ["ps2"],
     },
-    image: ps2,
   },
   {
     name: "Sony Playstation 3",
     folderNames: {
       emulationStation: ["ps3"],
     },
-    image: ps3,
   },
   {
     name: "Sony Playstation 4",
     folderNames: {
       emulationStation: ["ps4"],
     },
-    image: ps4,
   },
   {
     name: "Sony Playstation Portable",
     folderNames: {
       emulationStation: ["psp"],
     },
-    image: psp,
   },
   {
     name: "Sony Playstation Vita",
     folderNames: {
       emulationStation: ["psvita"],
     },
-    image: psvita,
   },
   {
     name: "Sony Playstation",
@@ -393,14 +387,12 @@ export const consoles = [
       emulationStation: ["psx"],
       miyoo: ["PS"],
     },
-    image: psx,
   },
   {
     name: "Sega Saturn",
     folderNames: {
       emulationStation: ["saturn", "saturnjs"],
     },
-    image: staurn,
   },
   {
     name: "Sega 32X",
@@ -408,7 +400,6 @@ export const consoles = [
       emulationStation: ["sega32x", "sega32xjp", "sega32xna"],
       miyoo: ["THIRTYTWOX"],
     },
-    image: md,
   },
   {
     name: "Sega Genesis/Mega Drive",
@@ -416,23 +407,20 @@ export const consoles = [
       emulationStation: ["genesis", "megadrive", "megadrivejp"],
       miyoo: ["MD"],
     },
-    image: md,
   },
   {
     name: "Sega CD",
     folderNames: {
       emulationStation: ["megacd", "megacdjp"],
-      miyoo: ["segacd"]
+      miyoo: ["segacd"],
     },
-    image: md,
   },
   {
     name: "Sega SG-1000",
     folderNames: {
       emulationStation: ["sg-1000"],
-      miyoo: ["SEGASGONE"]
+      miyoo: ["SEGASGONE"],
     },
-    image:null,
   },
   {
     name: "FinalBurn Alpha",
@@ -440,7 +428,6 @@ export const consoles = [
       emulationStation: ["fba"],
       miyoo: ["ARCADE"],
     },
-    image: arcadeBlack,
   },
   {
     name: "FinalBurn Neo",
@@ -448,7 +435,6 @@ export const consoles = [
       emulationStation: ["fbneo"],
       miyoo: ["ARCADE"],
     },
-    image: arcadeBlack,
   },
   {
     name: "Nintendo Famicom Disk System",
@@ -456,21 +442,18 @@ export const consoles = [
       emulationStation: ["fds"],
       miyoo: ["FDS"],
     },
-    image: nes,
   },
   {
     name: "Fujitsu FM Towns",
     folderNames: {
       emulationStation: ["fmtowns"],
     },
-    image: null,
   },
   {
     name: "Future Pinball",
     folderNames: {
       emulationStation: ["fpinball"],
     },
-    image: null,
   },
   {
     name: "Nintendo Famicom Disk System",
@@ -478,42 +461,36 @@ export const consoles = [
       emulationStation: ["gameandwatch"],
       miyoo: ["GW"],
     },
-    image: gw,
   },
   {
     name: "Hartung Game Master",
     folderNames: {
       emulationStation: ["gmaster"],
     },
-    image: null,
   },
   {
     name: "Amstrad GX4000",
     folderNames: {
       emulationStation: ["gx4000"],
     },
-    image: null,
   },
   {
     name: "LCD Handheld Games",
     folderNames: {
       emulationStation: ["lcdgames"],
     },
-    image: null,
   },
   {
     name: "LowRes NX Fantasy Console",
     folderNames: {
       emulationStation: ["lowresnx"],
     },
-    image: null,
   },
   {
     name: "Lutro Game Engine",
     folderNames: {
       emulationStation: ["lutro"],
     },
-    image: null,
   },
   {
     name: "Multiple Arcade Machine Emulator",
@@ -521,7 +498,6 @@ export const consoles = [
       emulationStation: ["mame"],
       miyoo: ["ARCADE"],
     },
-    image: arcadeBlackGray,
   },
   {
     name: "AdvanceMAME",
@@ -529,7 +505,6 @@ export const consoles = [
       emulationStation: ["mame-advmame"],
       miyoo: ["ARCADE"],
     },
-    image: arcadeBlackGray,
   },
   {
     name: "MAME4ALL",
@@ -537,71 +512,61 @@ export const consoles = [
       emulationStation: ["mame-mame4all"],
       miyoo: ["ARCADE"],
     },
-    image: arcadeBlackGray,
   },
   {
     name: "Multi Emulator Super System",
     folderNames: {
       emulationStation: ["mess"],
     },
-    image: null,
   },
   {
     name: "Nintendo 3DS",
     folderNames: {
       emulationStation: ["n3ds"],
     },
-    image: n3ds,
   },
   {
     name: "Nintendo DS",
     folderNames: {
       emulationStation: ["ds"],
-      miyoo: ["DS"]
+      miyoo: ["DS"],
     },
-    image: ds,
   },
   {
     name: "Nintendo 64",
     folderNames: {
       emulationStation: ["n64"],
     },
-    image: n64,
   },
   {
     name: "Nintendo 64DD",
     folderNames: {
       emulationStation: ["n64dd"],
     },
-    image: n64,
   },
   {
     name: "Nintendo Wii",
     folderNames: {
       emulationStation: ["wii"],
     },
-    image: wii,
   },
   {
     name: "Nintendo Wii U",
     folderNames: {
       emulationStation: ["wiiu"],
     },
-    image: wiiu,
   },
   {
     name: "Microsoft Xbox",
     folderNames: {
       emulationStation: ["xbox"],
     },
-    image: xbox,
   },
   {
     name: "Microsoft Xbox 360",
     folderNames: {
       emulationStation: ["xbox360"],
     },
-    image: xbox360,
   },
   {
     name: "Sinclair ZX81",
@@ -609,7 +574,6 @@ export const consoles = [
       emulationStation: ["zx81"],
       miyoo: "ZXEIGHTYONE",
     },
-    image: null,
   },
   {
     name: "Sinclair ZX Spectrum",
@@ -617,21 +581,18 @@ export const consoles = [
       emulationStation: ["zxspectrum"],
       miyoo: "ZXS",
     },
-    image: null,
   },
   {
     name: "Sinclair ZX Spectrum Next",
     folderNames: {
       emulationStation: ["zxnext"],
     },
-    image: null,
   },
   {
     name: "Infocom Z-machine",
     folderNames: {
       emulationStation: ["zmachine"],
     },
-    image: null,
   },
   {
     name: "Sharp X68000",
@@ -639,63 +600,54 @@ export const consoles = [
       emulationStation: ["x68000"],
       miyoo: ["X68000"],
     },
-    image: null,
   },
   {
     name: "WASM-4 Fantasy Console",
     folderNames: {
       emulationStation: ["wasm4"],
     },
-    image: null,
   },
   {
     name: "VTech V.Smile",
     folderNames: {
       emulationStation: ["vsmile"],
     },
-    image: null,
   },
   {
     name: "Visual Pinball",
     folderNames: {
       emulationStation: ["vpinball"],
     },
-    image: null,
   },
   {
     name: "Solarus Game Engine",
     folderNames: {
       emulationStation: ["solarus"],
     },
-    image: null,
   },
   {
     name: "Spectravideo",
     folderNames: {
       emulationStation: ["spectravideo"],
     },
-    image: null,
   },
   {
     name: "Stratagus Game Engine",
     folderNames: {
       emulationStation: ["stratagus"],
     },
-    image: null,
   },
   {
     name: "Bandai SuFami Turbo",
     folderNames: {
       emulationStation: ["sufami"],
     },
-    image: null,
   },
   {
     name: "Epoch Super Cassette Vision",
     folderNames: {
       emulationStation: ["scv"],
     },
-    image: null,
   },
   {
     name: "ScummVM Game Engine",
@@ -703,56 +655,48 @@ export const consoles = [
       emulationStation: ["scummvm"],
       miyoo: ["SCUMMVM"],
     },
-    image: null,
   },
   {
     name: "Symbian",
     folderNames: {
       emulationStation: ["symbian"],
     },
-    image: null,
   },
   {
     name: "Tano Dragon",
     folderNames: {
       emulationStation: ["tanodragon"],
     },
-    image: null,
   },
   {
     name: "MGT SAM Coupé",
     folderNames: {
       emulationStation: ["samcoupe"],
     },
-    image: null,
   },
   {
     name: "Casio PV-1000",
     folderNames: {
       emulationStation: ["pv1000"],
     },
-    image: null,
   },
   {
     name: "IBM PC",
     folderNames: {
       emulationStation: ["pc"],
     },
-    image: null,
   },
   {
     name: "Palm OS",
     folderNames: {
       emulationStation: ["palm"],
     },
-    image: null,
   },
   {
     name: "Tangerine Computer Systems Oric",
     folderNames: {
       emulationStation: ["oric"],
     },
-    image: null,
   },
   {
     name: "OpenBOR Game Engine",
@@ -760,7 +704,6 @@ export const consoles = [
       emulationStation: ["openbor"],
       miyoo: ["OPENBOR"],
     },
-    image: null,
   },
   {
     name: "Sharp X1",
@@ -768,7 +711,6 @@ export const consoles = [
       emulationStation: ["x1"],
       miyoo: ["XONE"],
     },
-    image: null,
   },
   {
     name: "Bandai WonderSwan",
@@ -776,7 +718,6 @@ export const consoles = [
       emulationStation: ["wonderswan"],
       miyoo: ["WS"],
     },
-    image: bandaiBlue,
   },
   {
     name: "Bandai WonderSwan Color",
@@ -784,7 +725,6 @@ export const consoles = [
       emulationStation: ["wonderswancolor"],
       miyoo: ["WS"],
     },
-    image: bandaiRed,
   },
   {
     name: "Nintendo Virtual Boy",
@@ -792,7 +732,6 @@ export const consoles = [
       emulationStation: ["virtualboy"],
       miyoo: ["VB"],
     },
-    image: vb,
   },
   {
     name: "Philips Videopac G7000",
@@ -800,7 +739,6 @@ export const consoles = [
       emulationStation: ["videopac"],
       miyoo: ["ODYSSEY"],
     },
-    image: null,
   },
   {
     name: "Commodore VIC-20",
@@ -808,7 +746,6 @@ export const consoles = [
       emulationStation: ["vic20"],
       miyoo: ["COMMODORE"],
     },
-    image: c64,
   },
   {
     name: "Smith Engineering Vectrex",
@@ -816,7 +753,6 @@ export const consoles = [
       emulationStation: ["vectrex"],
       miyoo: ["VECTREX"],
     },
-    image: null,
   },
   {
     name: "Uzebox Open Source Console",
@@ -824,21 +760,18 @@ export const consoles = [
       emulationStation: ["uzebox"],
       miyoo: ["UZEBOX"],
     },
-    image: null,
   },
   {
     name: "Tandy TRS-80",
     folderNames: {
       emulationStation: ["trs-80"],
     },
-    image: null,
   },
   {
     name: "Thomson TO8",
     folderNames: {
       emulationStation: ["to8"],
     },
-    image: null,
   },
   {
     name: "TIC-80 Game Engine",
@@ -846,21 +779,18 @@ export const consoles = [
       emulationStation: ["tic80"],
       miyoo: ["TIC"],
     },
-    image: null,
   },
   {
     name: "Texas Instruments TI-99",
     folderNames: {
       emulationStation: ["ti99"],
     },
-    image: null,
   },
   {
     name: "Nintendo Switch",
     folderNames: {
       emulationStation: ["switch"],
     },
-    image: switchConsole,
   },
   {
     name: "Super Nintendo",
@@ -868,7 +798,6 @@ export const consoles = [
       emulationStation: ["snes", "snesna", "sfc"],
       miyoo: ["SFC"],
     },
-    image: snes,
   },
   {
     name: "NEC TurboGrafx-CD",
@@ -876,7 +805,6 @@ export const consoles = [
       emulationStation: ["tg-cd"],
       miyoo: ["PCECD"],
     },
-    image: nec,
   },
   {
     name: "Watara Supervision",
@@ -884,7 +812,6 @@ export const consoles = [
       emulationStation: ["supervision"],
       miyoo: ["SUPERVISION"],
     },
-    image: null,
   },
   {
     name: "NEC SuperGrafx",
@@ -892,21 +819,18 @@ export const consoles = [
       emulationStation: ["supergrafx"],
       miyoo: ["SGFX"],
     },
-    image: nec,
   },
   {
     name: "NEC PC-8800 Series",
     folderNames: {
       emulationStation: ["pc88"],
     },
-    image: null,
   },
   {
     name: "NEC PC-9800 Series",
     folderNames: {
       emulationStation: ["pc98"],
     },
-    image: null,
   },
   {
     name: "PICO-8 Fantasy Console",
@@ -914,7 +838,6 @@ export const consoles = [
       emulationStation: ["pico8"],
       miyoo: ["PICO"],
     },
-    image: null,
   },
   {
     name: "Nintendo Pokémon Mini",
@@ -922,14 +845,12 @@ export const consoles = [
       emulationStation: ["pokemini"],
       miyoo: ["POKE"],
     },
-    image: pokemini,
   },
   {
     name: "Tiger Electronics Game.com",
     folderNames: {
       emulationStation: ["gamecom"],
     },
-    image: null,
   },
   {
     name: "Sega Game Gear",
@@ -937,7 +858,6 @@ export const consoles = [
       emulationStation: ["gamegear"],
       miyoo: ["GG"],
     },
-    image: gg,
   },
   {
     name: "Nintendo Game Boy",
@@ -945,7 +865,6 @@ export const consoles = [
       emulationStation: ["gb"],
       miyoo: ["GB"],
     },
-    image: gameboy,
   },
   {
     name: "Nintendo Game Boy Advance",
@@ -953,7 +872,6 @@ export const consoles = [
       emulationStation: ["gba"],
       miyoo: ["GBA"],
     },
-    image: gba,
   },
   {
     name: "Nintendo Game Boy Color",
@@ -961,14 +879,12 @@ export const consoles = [
       emulationStation: ["gbc"],
       miyoo: ["GBC"],
     },
-    image: gbc,
   },
   {
     name: "Nintendo GameCube",
     folderNames: {
       emulationStation: ["gc"],
     },
-    image: gc,
   },
   {
     name: "Mattel Electronics Intellivision",
@@ -976,7 +892,6 @@ export const consoles = [
       emulationStation: ["intellivision"],
       miyoo: ["INTELLIVISION"],
     },
-    image: intellivision,
   },
   {
     name: "Sega Master System",
@@ -984,28 +899,24 @@ export const consoles = [
       emulationStation: ["mastersystem"],
       miyoo: ["MS"],
     },
-    image: ms,
   },
   {
     name: "Sega Model 2",
     folderNames: {
       emulationStation: ["model2"],
     },
-    image: null,
   },
   {
     name: "Sega Model 3",
     folderNames: {
       emulationStation: ["model3"],
     },
-    image: null,
   },
   {
     name: "Thomson MO/TO Series",
     folderNames: {
       emulationStation: ["moto"],
     },
-    image: null,
   },
   {
     name: "MSX",
@@ -1013,7 +924,6 @@ export const consoles = [
       emulationStation: ["msx"],
       miyoo: ["MSX"],
     },
-    image: null
   },
   {
     name: "MSX1",
@@ -1021,7 +931,6 @@ export const consoles = [
       emulationStation: ["msx1"],
       miyoo: ["MSX"],
     },
-    image: null
   },
   {
     name: "MSX2",
@@ -1029,7 +938,6 @@ export const consoles = [
       emulationStation: ["msx2"],
       miyoo: ["MSX"],
     },
-    image: null
   },
   {
     name: "Creatronic Mega Duck",
@@ -1037,128 +945,111 @@ export const consoles = [
       emulationStation: ["megaduck"],
       miyoo: ["MEGADUCK"],
     },
-    image: null
   },
   {
     name: "Apple Macintosh",
     folderNames: {
       emulationStation: ["macintosh"],
     },
-    image: null
   },
   {
     name: "MSX Turbo R",
     folderNames: {
       emulationStation: ["msxturbor"],
     },
-    image: null
   },
   {
     name: "M.U.G.E.N Game Engine",
     folderNames: {
       emulationStation: ["mugen"],
     },
-    image: null
   },
   {
     name: "Othello Multivision",
     folderNames: {
       emulationStation: ["multivision"],
     },
-    image: null
   },
   {
     name: "NEC TurboGrafx-16",
     folderNames: {
       emulationStation: ["tg16", "pcengine"],
-      miyoo: ["PCE"]
+      miyoo: ["PCE"],
     },
-    image: nec
   },
   {
     name: "NEC TurboGrafx CD",
     folderNames: {
       emulationStation: ["pcenginecd"],
-      miyoo: ["PCECD"]
+      miyoo: ["PCECD"],
     },
-    image: nec
   },
   {
     name: "Sega NAOMI",
     folderNames: {
       emulationStation: ["naomi"],
     },
-    image: null
   },
   {
     name: "Sega NAOMI CD-ROM",
     folderNames: {
       emulationStation: ["naomigd"],
     },
-    image: null
   },
   {
     name: "SNK Neo Geo",
     folderNames: {
       emulationStation: ["neogeo"],
-      miyoo: ["NEOGEO"]
+      miyoo: ["NEOGEO"],
     },
-    image: snk
   },
   {
     name: "SNK Neo Geo CD",
     folderNames: {
       emulationStation: ["neogeocd", "neogeocdjp"],
-      miyoo: ["NEOCD"]
+      miyoo: ["NEOCD"],
     },
-    image: neogeocd
   },
   {
     name: "SNK Neo Geo Pocket",
     folderNames: {
       emulationStation: ["ngp"],
-      miyoo: ["NGP"]
+      miyoo: ["NGP"],
     },
-    image: ngp
   },
   {
     name: "SNK Neo Geo Pocket Color",
     folderNames: {
       emulationStation: ["ngpc"],
-      miyoo: ["NGP"]
+      miyoo: ["NGP"],
     },
-    image: ngp
   },
   {
     name: "Magnavox Odyssey2",
     folderNames: {
       emulationStation: ["odyssey2"],
-      miyoo: ["ODYSSEY"]
+      miyoo: ["ODYSSEY"],
     },
-    image: null
   },
   {
     name: "NEC PC-FX",
     folderNames: {
       emulationStation: ["pcfx"],
-      miyoo: ["PCFX"]
+      miyoo: ["PCFX"],
     },
-    image: null
   },
   {
     name: "Nintendo Satellaview",
     folderNames: {
       emulationStation: ["satellaview"],
-      miyoo: ["SATELLAVIEW"]
+      miyoo: ["SATELLAVIEW"],
     },
-    image: null
   },
   {
     name: "Nintendo Super Game Boy",
     folderNames: {
       emulationStation: ["sgb"],
-      miyoo: ["SGB"]
+      miyoo: ["SGB"],
     },
-    image: null
   },
-];
+]
