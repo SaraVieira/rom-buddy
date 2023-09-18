@@ -52,31 +52,39 @@ export const consoles = [
     name: "3DO Interactive Multiplayer",
     folderNames: { emulationStation: "3DO", miyoo: "PANASONIC" },
     image: ThreeDO,
+    extensions: [".bin", ".chd", ".cue", ".iso", ".7z", ".zip"]
+    
   },
   {
     name: "Adventure Game Studio Game Engine",
     folderNames: { emulationStation: "ags" },
     image: null,
+    extensions: [".app", ".sh"]
   },
   {
     name: "Commodore Amiga",
     folderNames: { emulationStation: "amiga", miyoo: "AMIGA" },
     image: amiga,
+    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
   },
   {
     name: "Commodore Amiga 1200",
     folderNames: { emulationStation: "amiga1200", miyoo: "AMIGA" },
     image: amiga,
+    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
+    
   },
   {
     name: "Commodore Amiga 600",
     folderNames: { emulationStation: "amiga600", miyoo: "AMIGA" },
     image: amiga,
+    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
   },
   {
     name: "Commodore Amiga CD32",
     folderNames: { emulationStation: "amigacd32", miyoo: "AMIGACD" },
     image: amiga,
+    extensions: [".adf", ".adz", ".ccd", ".chd", ".cue", ".dms", ".fdi", ".hdf", ".hdz", ".ipf", ".rp9", ".iso", ".lha", ".m3u", ".mds", ".nrg", ".uae", ".7z", ".zip"]
   },
   {
     name: "Amstrad CPC",
